@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Q Creative 2015 Edition - HTML5 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <!-- - - main style scripts -->
+    <link rel='stylesheet' property='stylesheet' type="text/css" href="./bootstrap/bootstrap.min.css"/>
+    <link rel='stylesheet' property='stylesheet' type="text/css" href="./qcreative/qcreative.css"/>
+    <link rel='stylesheet' property='stylesheet' type="text/css" href="dzsparallaxer/dzsparallaxer.css"/>
+    <script src="js/jquery.js"></script>
+    <link rel='stylesheet' property='stylesheet' type="text/css" href="zfolio/zfolio.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,400italic,600,700' rel='stylesheet' property='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' property='stylesheet' type='text/css'>
+
+    <script class="mainoptions">
+
+        // -- page options come here
+
+
+        window.qcreative_options = {
+            images_arr: ['img/backgrounds/3.jpg']  // -- the background
+            ,enable_ajax: 'on' // -- enable "on" - ajax transition between pages / disable "off"
+            ,bg_isparallax: 'on' // -- apply a parallax effect on scroll
+
+
+        };
+        // -- page options END here
+    </script>
+</head>
+<body class="page-portfolio post-type-page content-align-center page-title-align-right page-title-style-2 menu-type-1">
+
+<!-- this is where the main background will come, set image from above ( images_arr ) -->
+<div class="main-bg-con  " data-options='{  mode_scroll: "fromtop" }'>
+    <figure class="main-bg " style=""></figure>
+</div>
+
+
+
+<div class="main-container">
+
+
+    <div class="the-content-con">
+
+        <!--page title-->
+        <h1>
+            WORKS
+        </h1>
+
+        <div class="the-content">
+
+            <!-- markup for blur // do not modify -->
+            <div class="translucent-con ">
+                <div class="translucent-bg  for-parallaxer"></div>
+                <canvas class="translucent-canvas"></canvas>
+                <div class="translucent-overlay"></div>
+            </div>
+
+
+
+            <div class="the-content-inner">
+
+                <!-- portfolio markup, modify layout by changing the layout-3-cols-15-margin class with
+
+                 - layout-2-cols-15-margin // 2 columns with margin
+                 - layout-3-cols-15-margin // 3 columns with margin
+                 - layout-4-cols-15-margin // 4 columns with margin
+                 - layout-5-cols-15-margin // 5 columns with margin
+
+                 -->
+
+                <div class="zfolio skin-qcre  delay-effects layout-3-cols-15-margin zfolio-portfolio-expandable" data-options=''>
+                    <div class="items ">
+
+                        <!-- portfolio item (big slider), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"  data-thumbnail="img/portfolio_expandable/thumbs/1.jpg"  data-overlay_extra_class="content-opener" style="" >
+
+
+                            <!-- content module with slider -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+                                    <div class="dzs-col-12">
+
+                                        <!-- slider markup-->
+                                        <div class="advancedscroller-con">
+                                            <div class="advancedscroller skin-qcre" style="width:100%; height: auto; margin-bottom: 0;" data-defaultheight="465">
+                                                <ul class="items">
+                                                    <!-- slider item -->
+                                                    <li class="item-tobe needs-loading">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_big_0.jpg);height:auto;"></div>
+                                                    </li>
+
+                                                    <li class="item-tobe ">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_big_1.jpg);height:auto;"></div>
+                                                    </li>
+
+                                                    <!-- slider item -->
+                                                    <li class="item-tobe">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_big_2.jpg);height:auto;"></div>
+                                                    </li>
+
+                                                    <!-- slider item -->
+                                                    <li class="item-tobe">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_big_3.jpg);height:auto;"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- slider markup END-->
+
+                                    </div>
+                                    <div class="clear"></div>
+
+
+                                    <!-- description markup-->
+                                    <div class="desc-content-wrapper desc-content-wrapper-special-1">
+                                        <div class="dzs-col-4" style=";">
+                                            <h3 style="">WILLIAMS WEAR</h3>
+                                            <div class="subtitle">big slideshow</div>
+                                            <blockquote class="lesser-margin">Williams Fashion<br>
+                                                Feb 21st 2015<br>
+                                                <a href="#">www.website.com</a>
+                                            </blockquote>
+                                        </div>
+                                        <div class="dzs-col-8" style=";">
+                                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus ornare nisi, non aliquet mi euismod ac. Aenean eros diam, sodales tincidunt iaculis metis bibendum, blandit in dolor. Nulla facilisi. Suspendisse non sagittis diam mauris. Curabitur felis est, fermentum sed odio id, pellentesque luctus mi. Duis in neque in urna consectetur ornare. Pellentesque mollis sollicitudin purus, pulvinar volutpat sapien. Praesent at sem a metus tempor rhoncus accumsan id tortor. Aliquam ut scelerisque magna, vitae accumsan urna. Sed pharetra blandit massa. Cras euismod pretium pretium. Aenean suscipit dapibus egestas.</p>
+                                        </div>
+                                    </div>
+                                    <!-- item description END-->
+
+                                </div>
+
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "on"
+                                    ,settings_autoHeight_proportional: "on"
+                                    ,settings_autoHeight_proportional_max_height: 450
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "150"
+                                    ,settings_force_immediate_load:"off"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+                        <!-- portfolio item (small slider), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item" data-thumbnail="img/portfolio_expandable/thumbs/2.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- slider markup-->
+                                    <div class="dzs-col-8">
+                                        <div class="advancedscroller-con">
+                                            <div class="advancedscroller skin-qcre" style="width:100%; height: auto; margin-bottom: 0;">
+                                                <ul class="items">
+                                                    <!-- slider item -->
+                                                    <li class="item-tobe needs-loading">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_small_1.jpg);height:auto;"></div>
+                                                    </li>
+
+                                                    <!-- slider item -->
+                                                    <li class="item-tobe">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_small_2.jpg);height:auto;"></div>
+                                                    </li>
+
+                                                    <!-- slider item -->
+                                                    <li class="item-tobe">
+                                                        <div class="imagediv" style="background-image: url(img/portfolio_expandable/slide_small_3.jpg);height:auto;"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider markup END -->
+
+                                    <!-- description markup-->
+                                    <div class="dzs-col-4" style="padding-right: 45px;">
+                                        <h4>FROM ABOVE</h4>
+                                        <div class="subtitle">small slideshow</div>
+                                        <hr class="qcreative-hr-small">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo..
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "on"
+                                    ,settings_autoHeight_proportional: "on"
+                                    ,settings_autoHeight_proportional_max_height: 500
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (big vimeo video), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"   data-thumbnail="img/portfolio_expandable/thumbs/3.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-12">
+                                        <div class="vplayer-tobe auto-init-from-q skin_pro" data-src="https://vimeo.com/51919861"  style="height: 456px;" data-options=''></div>
+                                    </div>
+
+                                    <div class="clear"></div>
+
+
+                                    <!-- description markup-->
+                                    <div class="desc-content-wrapper desc-content-wrapper-special-1">
+                                        <div class="dzs-col-4" style=";">
+                                            <h3 style="">CLASSIC CARS</h3>
+                                            <div class="subtitle">big vimeo video</div>
+                                            <blockquote class="lesser-margin">Oldies Vehicles<br>
+                                                Feb 21st 2015<br>
+                                                <a href="#">www.website.com</a>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-md-4" style=";">
+                                            <p>Lorem ipsum dolor sit amet mauris, consectetur adipiscing elit. Maecenas ex mauris, scelerisque sed justo ut, fermentum ultricies ante. Aliquam ultrices purus quis lacinia vulputate. Nullam volutpat lectus et justo iaculis, a convallis diam eleifend cremittas. Pellentesque vulputate magna ac quam laoreet, ornare venenatis erat vulputate. Suspendisse nec libero nec sem hendrerit faucibus eget a elit.</p>
+                                        </div>
+                                        <div class="col-md-4" style=";">
+                                            <p>Nunc aliquet purus lorem, at lacinia elit auctor et. Proin laoreet mest sollicitudin condimentum. Curabitur id ultricies odio. Etiam ut dapibus metus. Morbi suscipit justo eget metus fermentum, quis porta lorem imperdiet. Quisque facilisis vitae ipsum eu lobortis. Fusce in nulla ac urna iaculis iaculis dignissim eu tellus. Fusce tellus leo, facilisis sit amet cursus eget, rutrum eu arcu.</p>
+                                        </div>
+                                    </div>
+                                    <!-- item description END-->
+
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+                        <!-- portfolio item (small vimeo video, modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"   data-thumbnail="img/portfolio_expandable/thumbs/4.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-8">
+                                        <div class="vplayer-tobe auto-init-from-q skin_pro" data-src="https://vimeo.com/23237102"  style="height: 305px;" data-options=''></div>
+                                    </div>
+
+
+                                    <!-- item description markup -->
+                                    <div class="dzs-col-4" style="padding-right: 45px;">
+                                        <h4>COLLEST CITY</h4>
+                                        <div class="subtitle">small vimeo video</div>
+                                        <hr class="qcreative-hr-small">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                    <!-- item description markup END -->
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (big single image), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"  data-thumbnail="img/portfolio_expandable/thumbs/5.jpg"  data-overlay_extra_class="content-opener" style="" >
+
+
+                            <!-- content module with image -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+                                    <div class="dzs-col-12">
+
+                                        <!-- image markup-->
+                                        <img alt="image" class="fullwidth" src="img/portfolio_expandable/big_image.jpg"/>
+
+                                    </div>
+                                    <div class="clear"></div>
+
+
+                                    <!-- description markup-->
+                                    <div class="desc-content-wrapper desc-content-wrapper-special-1">
+                                        <div class="dzs-col-4" style=";">
+                                            <h3 style="">THE HAPPY SHOP</h3>
+                                            <div class="subtitle">big single image</div>
+                                            <blockquote class="lesser-margin">Happy Shop Inc.<br>
+                                                Feb 21st 2015<br>
+                                                <a href="#">www.website.com</a>
+                                            </blockquote>
+                                        </div>
+                                        <div class="dzs-col-8" style=";">
+                                            <p class="">Praesent libero nunc, rutrum in porttitor imperdiet, maximus pharetra erat. Nunc ullamcorper diam at sapien lobortis, in fermentum nisi tincidunt. Fusce tincidunt egestas mi, non ultrices nisi sagittis vel. Ut porta orci quis nisi aliquam varius. Nulla posuere quam tristique semper rhoncus. In pharetra ornare malesuada. Curabitur sit amet pulvinar ligula. Nam elit sem, rutrum sed enim efficitur, congue suscipit ipsum. Cras congue justo quis maximus dapibus. Praesent eu felis sit amet eros vulputate euismod eu a sapien.</p>
+                                        </div>
+                                    </div>
+                                    <!-- item description END-->
+
+                                </div>
+
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "150"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (small single image), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item" data-thumbnail="img/portfolio_expandable/thumbs/6.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+
+                            <!-- content module with image-->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- image markup-->
+                                    <div class="dzs-col-8">
+                                        <img alt="image" class="fullwidth" src="img/portfolio_expandable/small_image.jpg"/>
+                                    </div>
+
+                                    <!-- description markup-->
+                                    <div class="dzs-col-4" style="padding-right: 45px;">
+                                        <h4>THE HORSE RIDER</h4>
+                                        <div class="subtitle">small single image</div>
+                                        <hr class="qcreative-hr-small">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (big youtube video), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"  data-thumbnail="img/portfolio_expandable/thumbs/7.jpg"  data-overlay_extra_class="content-opener" style="" >
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-12">
+                                        <div class="vplayer-tobe auto-init-from-q skin_pro" data-src="https://www.youtube.com/watch?v=i6T8LfDwQjo"  style="height: 456px;" data-options=''></div>
+                                    </div>
+
+
+
+                                    <div class="clear"></div>
+
+
+                                    <!-- description markup-->
+                                    <div class="desc-content-wrapper desc-content-wrapper-special-1">
+                                        <div class="dzs-col-4" style=";">
+                                            <h3 style="">ADRENALINE RUSH</h3>
+                                            <div class="subtitle">big youtube video</div>
+                                            <blockquote class="lesser-margin">Ski Corporation<br>
+                                                Feb 21st 2015<br>
+                                                <a href="#">www.website.com</a>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-md-4" style=";">
+                                            <p>Lorem ipsum dolor sit amet mauris, consectetur adipiscing elit. Maecenas ex mauris, scelerisque sed justo ut, fermentum ultricies ante. Aliquam ultrices purus quis lacinia vulputate. Nullam volutpat lectus et justo iaculis, a convallis diam eleifend cremittas. Pellentesque vulputate magna ac quam laoreet, ornare venenatis erat vulputate. Suspendisse nec libero nec sem hendrerit faucibus eget a elit.</p>
+                                        </div>
+                                        <div class="col-md-4" style=";">
+                                            <p>Nunc aliquet purus lorem, at lacinia elit auctor et. Proin laoreet mest sollicitudin condimentum. Curabitur id ultricies odio. Etiam ut dapibus metus. Morbi suscipit justo eget metus fermentum, quis porta lorem imperdiet. Quisque facilisis vitae ipsum eu lobortis. Fusce in nulla ac urna iaculis iaculis dignissim eu tellus. Fusce tellus leo, facilisis sit amet cursus eget, rutrum eu arcu.</p>
+                                        </div>
+                                    </div>
+                                    <!-- item description END-->
+
+                                </div>
+
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "off"
+                                    ,settings_slideshowTime: "150"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (small youtube video), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item" data-thumbnail="img/portfolio_expandable/thumbs/8.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-8">
+                                        <div class="vplayer-tobe auto-init-from-q skin_pro" data-src="https://www.youtube.com/watch?v=TEru6QoFUl0"  style="height: 305px;" data-options=''></div>
+                                    </div>
+
+                                    <!-- description markup-->
+                                    <div class="dzs-col-4" style="padding-right: 45px;">
+                                        <h4>I AM STRONG</h4>
+                                        <div class="subtitle">small youtube video</div>
+                                        <hr class="qcreative-hr-small">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "on"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (big local video), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"  data-thumbnail="img/portfolio_expandable/thumbs/9.jpg"  data-overlay_extra_class="content-opener" style="" >
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-12">
+                                        <div class="vplayer-tobe auto-init-from-q "  data-src="video/under_the_sea_hd_stock_video.mp4" data-sourceogg="video/under_the_sea_hd_stock_video.ogv" style="height: 456px;" data-options=''></div>
+                                    </div>
+
+
+
+                                    <div class="clear"></div>
+
+
+                                    <!-- description markup-->
+                                    <div class="desc-content-wrapper desc-content-wrapper-special-1">
+                                        <div class="dzs-col-4" style=";">
+                                            <h3 style="">EROTICA BLUE</h3>
+                                            <div class="subtitle">big local video</div>
+                                            <blockquote class="lesser-margin">Eros Incorporated<br>
+                                                Feb 21st 2015<br>
+                                                <a href="#">www.website.com</a>
+                                            </blockquote>
+                                        </div>
+                                        <div class="dzs-col-8" style=";">
+                                            <p class="">Quisque convallis elit sed condimentum sodales. Mauris venenatis posuere libero ut aliquet. Aenean suscipit purus et ante laoreet pharetra. Maecenas interdum a nibh sit amet efficitur. Suspendisse viverra pulvinar sagittis. Pellentesque gravida venenatis ante. Cras gravida purus semper dignissim iaculis. Fusce consequat vehicula orci non consectetur. Donec pharetra nibh magna, a tempus neque rutrum nec. Duis sed massa augue. Donec enim mi, ornare non risus ut, fermentum sollicitudin ante. Nulla vel rhoncus nisi. In eu tortor enim. Praesent sit amet lectus convallis, hendrerit enim vel.</p>
+                                        </div>
+                                    </div>
+                                    <!-- item description END-->
+
+                                </div>
+
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "on"
+                                    ,settings_slideshowTime: "150"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (small local video), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item" data-thumbnail="img/portfolio_expandable/thumbs/10.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-8">
+                                        <div class="vplayer-tobe auto-init-from-q skin_reborn"  data-src="video/under_the_sea_hd_stock_video.mp4" data-sourceogg="video/under_the_sea_hd_stock_video.ogv" style="height: 305px;" data-options=''></div>
+                                    </div>
+
+                                    <!-- description markup-->
+                                    <div class="dzs-col-4" style="padding-right: 45px;">
+                                        <h4>UNDERWATER</h4>
+                                        <div class="subtitle">small local video</div>
+                                        <hr class="qcreative-hr-small">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "on"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (big video with cover), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item"  data-thumbnail="img/portfolio_expandable/thumbs/11.jpg"  data-overlay_extra_class="content-opener" style="" >
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="vplayer-tobe auto-init-from-q skin_reborn" data-src="https://vimeo.com/113492144"  style="height: 474px;" data-options=''>
+                            <div class="cover-image" style="background-image: url(img/portfolio_expandable/cover.jpg); ">
+                                <svg class="cover-play-btn" version="1.1" baseProfile="tiny"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" overflow="auto" xml:space="preserve">
+<path fill-rule="evenodd" fill="#ffffff" d="M79.295,56.914c2.45,1.705,2.45,4.468,0,6.172l-24.58,17.103
+    c-2.45,1.704-4.436,0.667-4.436-2.317V42.129c0-2.984,1.986-4.022,4.436-2.318L79.295,56.914z M0.199,54.604
+    c-0.265,2.971-0.265,7.821,0,10.792c2.57,28.854,25.551,51.835,54.405,54.405c2.971,0.265,7.821,0.265,10.792,0
+    c28.854-2.57,51.835-25.551,54.405-54.405c0.265-2.971,0.265-7.821,0-10.792C117.231,25.75,94.25,2.769,65.396,0.198
+    c-2.971-0.265-7.821-0.265-10.792,0C25.75,2.769,2.769,25.75,0.199,54.604z M8.816,65.394c-0.309-2.967-0.309-7.82,0-10.787
+    c2.512-24.115,21.675-43.279,45.79-45.791c2.967-0.309,7.821-0.309,10.788,0c24.115,2.512,43.278,21.675,45.79,45.79
+    c0.309,2.967,0.309,7.821,0,10.788c-2.512,24.115-21.675,43.279-45.79,45.791c-2.967,0.309-7.821,0.309-10.788,0
+    C30.491,108.672,11.328,89.508,8.816,65.394z"/>
+</svg>
+                            </div>
+                        </div>
+
+
+
+                                    <div class="clear"></div>
+
+
+                                    <!-- description markup-->
+                                    <div class="desc-content-wrapper desc-content-wrapper-special-1">
+                                        <div class="dzs-col-4" style=";">
+                                            <h3 style="">SAFARI ADVENTURE</h3>
+                                            <div class="subtitle">big video with cover</div>
+                                            <blockquote class="lesser-margin">Discover Documentaries<br>
+                                                Feb 21st 2015<br>
+                                                <a href="#">www.website.com</a>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-md-4" style=";">
+                                            <p>Lorem ipsum dolor sit amet mauris, consectetur adipiscing elit. Maecenas ex mauris, scelerisque sed justo ut, fermentum ultricies ante. Aliquam ultrices purus quis lacinia vulputate. Nullam volutpat lectus et justo iaculis, a convallis diam eleifend cremittas. Pellentesque vulputate magna ac quam laoreet, ornare venenatis erat vulputate. Suspendisse nec libero nec sem hendrerit faucibus eget a elit.</p>
+                                        </div>
+                                        <div class="col-md-4" style=";">
+                                            <p>Nunc aliquet purus lorem, at lacinia elit auctor et. Proin laoreet mest sollicitudin condimentum. Curabitur id ultricies odio. Etiam ut dapibus metus. Morbi suscipit justo eget metus fermentum, quis porta lorem imperdiet. Quisque facilisis vitae ipsum eu lobortis. Fusce in nulla ac urna iaculis iaculis dignissim eu tellus. Fusce tellus leo, facilisis sit amet cursus eget, rutrum eu arcu.</p>
+                                        </div>
+                                    </div>
+                                    <!-- item description END-->
+
+                                </div>
+
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "on"
+                                    ,settings_slideshowTime: "150"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item (small video with cover), modify thumbnail from data-thumbnail attribute -->
+                        <div class="zfolio-item" data-thumbnail="img/portfolio_expandable/thumbs/12.jpg"  data-overlay_extra_class="content-opener" style="">
+
+
+
+                            <!-- content module markup - with video -->
+                            <div class="the-content excerpt-content skin-qcre" style="">
+                                <div class="dzs-colcontainer">
+
+
+                                    <!-- video markup -->
+                                    <div class="dzs-col-8">
+
+                                        <div class="vplayer-tobe auto-init-from-q skin_reborn" data-src="https://www.youtube.com/watch?v=EqI1ysnI_N4"  style="height: 305px;" data-options=''>
+                            <div class="cover-image" style="background-image: url(img/portfolio_expandable/cover_2.jpg); ">
+                                <svg class="cover-play-btn" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" overflow="auto" xml:space="preserve">
+<path fill-rule="evenodd" fill="#ffffff" d="M79.295,56.914c2.45,1.705,2.45,4.468,0,6.172l-24.58,17.103
+    c-2.45,1.704-4.436,0.667-4.436-2.317V42.129c0-2.984,1.986-4.022,4.436-2.318L79.295,56.914z M0.199,54.604
+    c-0.265,2.971-0.265,7.821,0,10.792c2.57,28.854,25.551,51.835,54.405,54.405c2.971,0.265,7.821,0.265,10.792,0
+    c28.854-2.57,51.835-25.551,54.405-54.405c0.265-2.971,0.265-7.821,0-10.792C117.231,25.75,94.25,2.769,65.396,0.198
+    c-2.971-0.265-7.821-0.265-10.792,0C25.75,2.769,2.769,25.75,0.199,54.604z M8.816,65.394c-0.309-2.967-0.309-7.82,0-10.787
+    c2.512-24.115,21.675-43.279,45.79-45.791c2.967-0.309,7.821-0.309,10.788,0c24.115,2.512,43.278,21.675,45.79,45.79
+    c0.309,2.967,0.309,7.821,0,10.788c-2.512,24.115-21.675,43.279-45.79,45.791c-2.967,0.309-7.821,0.309-10.788,0
+    C30.491,108.672,11.328,89.508,8.816,65.394z"/>
+</svg>
+                            </div>
+                        </div>
+
+                                    </div>
+
+                                    <!-- description markup-->
+                                    <div class="dzs-col-4" style="padding-right: 45px;">
+                                        <h4>FAST AND BEAUTIFUL</h4>
+                                        <div class="subtitle">small video with cover</div>
+                                        <hr class="qcreative-hr-small">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+
+                                <!-- script that setups slider on portfolio item click -->
+                                <div class="toexecute">
+                                    (function() {
+                                    var aux = window.dzszfl_execute_target.find(".advancedscroller");
+                                    jQuery(document).ready(function($){
+                                    window.dzsas_init(aux,{
+                                    settings_mode: "onlyoneitem"
+                                    ,design_arrowsize: "0"
+                                    ,settings_swipe: "on"
+                                    ,settings_autoHeight: "off"
+                                    ,settings_swipeOnDesktopsToo: "on"
+                                    ,settings_slideshow: "on"
+                                    ,settings_slideshowTime: "15"
+                                    });
+                                    });
+                                    })();
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- portfolio item markup END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="zfolio-preloader-1-con">
+                        <div class="zfolio-preloader-1"></div>
+                    </div>
+                </div>
+
+
+
+                <!-- pagination markup -->
+                <!--<ul class="qc-pagination">-->
+                <!--<li><a class="" href="#">1</a></li><li class="active"><a href="#">2</a></li><li><a class="" href="#">3</a></li><li><a class="" href="#">4</a></li><li><a class="" href="#">5</a></li>-->
+                <!--</ul>-->
+                <!-- pagination markup -->
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- this block is the navigation -->
+    <nav class="qcreative--nav-con">
+        <div class="translucent-con " style="">
+            <div class="translucent-bg for-parallaxer "></div>
+            <canvas class="translucent-canvas"></canvas>
+            <div class="translucent-overlay"></div>
+        </div>
+
+        <!-- modify logo from here -->
+        <div class="logo-con">
+            <a href="index.html"><img alt="the logo" class="the-logo" src="img/qlogo.png"/></a>
+        </div>
+
+        <!-- this block will be populated by gallery thumbnail navigation -->
+        <ul class="the-actual-nav">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="about.html">About Us</a></li>
+            <li class="menu-item"><a href="services.html">Services</a></li>
+            <li class="menu-item"><a href="#">Extras</a>
+                <ul>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="secondary-content.html">Secondary</a></li>
+                    <li><a href="section-titles.html">Section Titles</a></li>
+                       <li><a href="typography.html">Typography</a></li>
+                    <li><a href="#">Submenu</a>
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu-item current-menu-item"><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="portfolio-classic.html">Classic</a></li>
+                    <li><a href="portfolio-fullscreen.html">Fullscreen</a></li>
+                    <li class="current-menu-item"><a href="portfolio-expandable.html">Expandable</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="#">Gallery</a>
+                <ul>
+                    <li><a href="gallery-classic.html">Classic</a></li>
+                    <li><a href="gallery-masonry.html">Masonry</a></li>
+                    <li><a href="gallery-w-thumbs.html">Creative</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="blog.html">Our Blog</a></li>
+            <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-social-con">
+            <p class="social-icons">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </p>
+            <p class="copyright-text">COPYRIGHT &copy; Q CREATIVE 2015</p>
+        </div>
+
+    </nav>
+
+    <!-- end navigation -->
+
+
+    <!-- preloader area -->
+    <div class="preloader-con">
+        <!--<i class="fa fa-spin fa-spinner"></i>-->
+        <div class="cube-preloader"></div>
+    </div>
+</div>
+
+
+
+<!--script that initializes portfolio -->
+<script class="q-toexecute">
+    jQuery(document).ready(function() {
+        dzszfl_init('.zfolio', {
+            design_item_thumb_height: "1"
+            , item_extra_class: ""
+            , excerpt_con_transition: "wipe"
+            , excerpt_con_resize_videos: 'on'
+            , excerpt_con_responsive_ratio: '810'
+        });
+    });
+
+</script>
+
+<!--
+- - next will come the loaded scripts
+-->
+<link rel='stylesheet' property='stylesheet' type="text/css" href="dzsselector/dzsselector.css"/>
+<script src="dzsselector/dzsselector.js" type="text/javascript"></script>
+<script src="advancedscroller/plugin.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="qcreative/qcreative.js"></script>
+<link href='advancedscroller/plugin.css' rel='stylesheet' property='stylesheet' type='text/css'>
+<link href='fontawesome/font-awesome.min.css' rel='stylesheet' property='stylesheet' type='text/css'>
+<script src="zfolio/zfolio.js" type="text/javascript"></script>
+<script src="zfolio/jquery.isotope.min.js" type="text/javascript"></script>
+<script src="dzsparallaxer/dzsparallaxer.js" type="text/javascript"></script>
+<script src="dzstooltip/dzstooltip.js" type="text/javascript"></script>
+<link rel='stylesheet' property='stylesheet' type="text/css" href="dzstooltip/dzstooltip.css"/>
+<script src="dzsscroller/scroller.js" type="text/javascript"></script>
+<link rel='stylesheet' property='stylesheet' type="text/css" href="dzsscroller/scroller.css"/>
+
+<link rel='stylesheet' property='stylesheet' type="text/css" href="videogallery/vplayer.css"/>
+<script type="text/javascript" src="videogallery/vplayer.js"></script>
+</body>
+</html>
